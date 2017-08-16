@@ -5,9 +5,11 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.stereotype.Repository;
 
 import com.mongodb.DBCollection;
 
+@Repository
 public class RepositorioDinamicoImpl implements RepositorioDinamico {
 	
 	@Autowired

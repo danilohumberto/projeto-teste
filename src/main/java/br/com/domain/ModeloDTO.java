@@ -12,6 +12,8 @@ import br.com.utils.Utils;
 
 public class ModeloDTO implements Serializable {
 
+	private static final long serialVersionUID = 1804410415568385835L;
+
 	private String id;
 
 	private String nome;

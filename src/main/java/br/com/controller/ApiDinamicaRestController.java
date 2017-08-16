@@ -21,7 +21,7 @@ public class ApiDinamicaRestController {
 	private RegistroModeloService registroModeloService;
 
 	@RequestMapping(value = "/{modelo}", method = RequestMethod.GET)
-	public ResponseEntity getAll(@PathVariable String modelo) {
+	public ResponseEntity buscarTodos(@PathVariable String modelo) {
 		try {
 			return ResponseEntity.ok(registroModeloService.buscarTodos(modelo));
 		} catch (Exception e) {
@@ -30,7 +30,7 @@ public class ApiDinamicaRestController {
 	}
 
 	@RequestMapping(value = "/{modelo}/{id}", method = RequestMethod.GET)
-	public ResponseEntity getById(@PathVariable String modelo, @PathVariable String id) {
+	public ResponseEntity buscarPorId(@PathVariable String modelo, @PathVariable String id) {
 		try {
 			return ResponseEntity.ok(registroModeloService.buscarPorId(modelo, id));
 		} catch (Exception e) {
@@ -39,7 +39,7 @@ public class ApiDinamicaRestController {
 	}
 
 	@RequestMapping(value = "/{modelo}", method = RequestMethod.POST)
-	public ResponseEntity create(@PathVariable String modelo, @RequestBody Map<String, Object> atributos) {
+	public ResponseEntity criar(@PathVariable String modelo, @RequestBody Map<String, Object> atributos) {
 		try {
 			return ResponseEntity.ok(registroModeloService.criar(modelo, atributos));
 		} catch (Exception e) {
@@ -48,7 +48,7 @@ public class ApiDinamicaRestController {
 	}
 
 	@RequestMapping(value = "/{modelo}/{id}", method = RequestMethod.PUT)
-	public ResponseEntity updateById(@PathVariable String modelo, @PathVariable String id,
+	public ResponseEntity atualizarPorId(@PathVariable String modelo, @PathVariable String id,
 			@RequestBody Map<String, Object> atributos) {
 		try {
 			return ResponseEntity.ok(registroModeloService.atualizar(modelo, id, atributos));
@@ -58,7 +58,7 @@ public class ApiDinamicaRestController {
 	}
 
 	@RequestMapping(value = "/{modelo}/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity deleteById(@PathVariable String modelo, @PathVariable String id) {
+	public ResponseEntity removerPorId(@PathVariable String modelo, @PathVariable String id) {
 		try {
 			return ResponseEntity.ok(registroModeloService.removerPorId(modelo, id));
 		} catch (Exception e) {
