@@ -1,9 +1,9 @@
-package br.com.utils;
+package br.com.xyinc.utils;
 
 import java.util.List;
 
-import br.com.domain.Atributo;
-import br.com.domain.Modelo;
+import br.com.xyinc.domain.Atributo;
+import br.com.xyinc.domain.Modelo;
 
 public class ModeloBuilder {
 

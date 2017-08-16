@@ -1,4 +1,4 @@
-package br.com.service;
+package br.com.xyinc.service;
 
 import java.util.HashMap;
 import java.util.List;
@@ -9,9 +9,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.domain.Modelo;
-import br.com.persistence.RepositorioDinamico;
-import br.com.utils.GeradorDinamicoModelo;
+import br.com.xyinc.domain.Modelo;
+import br.com.xyinc.persistence.RepositorioDinamico;
+import br.com.xyinc.utils.GeradorDinamicoModelo;
 import javassist.CannotCompileException;
 import javassist.NotFoundException;
 

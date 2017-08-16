@@ -1,4 +1,4 @@
-package br.com.utils;
+package br.com.xyinc.utils;
 
 import java.io.Serializable;
 import java.util.Map;

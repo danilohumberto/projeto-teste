@@ -1,4 +1,4 @@
-package br.com.domain;
+package br.com.xyinc.domain;
 
 import java.io.Serializable;
 import java.util.List;

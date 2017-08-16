@@ -1,7 +1,7 @@
-package br.com.utils;
+package br.com.xyinc.utils;
 
-import br.com.domain.Atributo;
-import br.com.domain.Tipo;
+import br.com.xyinc.domain.Atributo;
+import br.com.xyinc.domain.Tipo;
 
 public class AtributoBuilder {
 

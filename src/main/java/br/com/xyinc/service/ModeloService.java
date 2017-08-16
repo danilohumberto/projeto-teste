@@ -1,4 +1,4 @@
-package br.com.service;
+package br.com.xyinc.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.domain.Modelo;
-import br.com.persistence.ModeloRepositorio;
+import br.com.xyinc.domain.Modelo;
+import br.com.xyinc.persistence.ModeloRepositorio;
 
 @Service
 public class ModeloService {

@@ -1,4 +1,4 @@
-package br.com.domain;
+package br.com.xyinc.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -6,9 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import br.com.utils.AtributoBuilder;
-import br.com.utils.ModeloBuilder;
-import br.com.utils.Utils;
+import br.com.xyinc.utils.AtributoBuilder;
+import br.com.xyinc.utils.ModeloBuilder;
+import br.com.xyinc.utils.Utils;
 
 public class ModeloDTO implements Serializable {
 

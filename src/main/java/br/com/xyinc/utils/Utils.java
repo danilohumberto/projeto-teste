@@ -1,6 +1,6 @@
-package br.com.utils;
+package br.com.xyinc.utils;
 
-import br.com.domain.Tipo;
+import br.com.xyinc.domain.Tipo;
 
 public class Utils {
 

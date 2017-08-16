@@ -1,4 +1,4 @@
-package br.com.service;
+package br.com.xyinc.service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,9 +11,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.domain.Atributo;
-import br.com.domain.Modelo;
-import br.com.domain.Tipo;
+import br.com.xyinc.domain.Atributo;
+import br.com.xyinc.domain.Modelo;
+import br.com.xyinc.domain.Tipo;
 
 @Service
 public class RegistroModeloService {

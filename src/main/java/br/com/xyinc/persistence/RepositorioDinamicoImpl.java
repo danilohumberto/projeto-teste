@@ -1,4 +1,4 @@
-package br.com.persistence;
+package br.com.xyinc.persistence;
 
 import java.util.List;
 import java.util.Map;
