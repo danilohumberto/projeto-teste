@@ -1,9 +1,21 @@
 # xy-inc
+Backend as a Service
 
-####Pré Requisitos
-- Gradle instalado
-	
+## Pré Requisitos
+* Java 8
+* [MongoDb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+* [Gradle 2.x](https://gradle.org)
 
+##### Instalação do MongoDb
+
+```shell
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+sudo service mongod start
+```
+___________________________________________________
 ##### Instalação do Gradle
 
 ```shell
@@ -12,15 +24,6 @@ sudo apt-get update
 sudo apt-get install gradle
 gradle -version
 ```
-####Gradle 2.13
-Build time:   2016-04-25 04:10:10 UTC]
-Build number: none
-Revision:     3b427b1481e46232107303c90be7b05079b05b1c
-
-Groovy:       2.4.4
-Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
-JVM:          1.8.0_101 (Oracle Corporation 25.101-b13)
-OS:           Linux 4.4.0-91-generic amd64
 ___________________________________________________
 ##Execução
 Acessar a home do projeto e  executar o seguinte comando:
