@@ -15,7 +15,6 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 sudo service mongod start
 ```
-___________________________________________________
 ##### Instalação do Gradle
 
 ```shell
@@ -25,8 +24,11 @@ sudo apt-get install gradle
 gradle -version
 ```
 ___________________________________________________
-##Execução
+
+## Compilação e Execução
+
 Acessar a home do projeto e  executar o seguinte comando:
+
 ```shell
 gradle clean build bootRun
 ```
