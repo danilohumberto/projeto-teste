@@ -3,7 +3,7 @@
 
 ---
 
-###1 - Requisitos Necessários:
+### 1 - Requisitos Necessários:
 
 * Java 8
 * [MongoDb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
