@@ -32,7 +32,7 @@ gradle -version
 
 ---
 
-###2 - Compilação e Execução do Projeto:
+### 2 - Compilação e Execução do Projeto:
 Acessar a home do projeto e  executar o seguinte comando:
 
 ```sh
