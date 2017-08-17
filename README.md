@@ -133,7 +133,12 @@ Retorno:
 }
 ```
 ---
-### 5 - Próximos Passos
+### 5 - Cobertura de Testes
+
+Para verificar a cobertura dos testes unitários que foram implementados e executados, basta acessar o a home do projeto após a aplicação ter sido executada conforme **passo 2** e abrir o arquivo **/build/reports/tests/index.html**
+
+---
+### 6 - Próximos Passos
 
 * Utilizar o framework swagger para documentação e especificação dos serviços.
 * Utilizar o docker para implantação da aplicação.
