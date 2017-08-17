@@ -27,6 +27,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile group: 'org.javassist', name: 'javassist', version: '3.19.0-GA'
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.0.0.RELEASE'
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-test")
     compile("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
