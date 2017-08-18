@@ -50,7 +50,7 @@ Utilizado o **[JaSON](https://www.google.com.br/url?sa=t&rct=j&q=&esrc=s&source=
 
 * **POST**
 
-Para criação de um modelo é necessário realizar uma requisição POST na seguinte URL **http://localhost:8080/modelo** informando o nome do modelo e seus atributos.
+Para criação de um modelo é necessário realizar uma requisição POST na seguinte URL **http://localhost:8080/{modelo}** informando o nome do modelo e seus atributos.
 
 Onde os tipos esperados dos atributos são: **boolean, char, character, date, double, float, int, integer, long, string, decimal**
 
@@ -67,8 +67,24 @@ Exemplo:
 	}
 }
 ```
+
+* **POST**
+
+Para definição dos valores dos atributos criados é necessário realizar uma requisição POST na seguinte URL **http://localhost:8080/api/{modelo}** informando o nome dos atributos criados e seus valores.
+
+Exemplo:
+ 
+```json
+{
+		"sexo": "Masculino",
+		"nome": "Danilo",
+		"idade": 25,
+       "casado": true
+}
+```
+
 ---
-* **GET** http://localhost:8080/modelo - Lista todos os modelos cadastrados
+* **GET** http://localhost:8080/{modelo} - Lista todos os modelos cadastrados
 
 Retorno:
 
@@ -97,9 +113,7 @@ Retorno:
 ]
 ```
 
-* **GET** - http://localhost:8080/modelo/id - Lista um modelo específico correspondente ao id cadastrado
-
-Exemplo: **http://localhost:8080/modelo/5995cf4cc05e6757d98a1f14**
+* **GET** - http://localhost:8080/{modelo}/{id} - Lista um modelo específico correspondente ao id cadastrado
 
 Retorno:
 
@@ -114,10 +128,23 @@ Retorno:
       "sexo": "String"
 }
 ```
----
-* **DELETE** - http://localhost:8080/modelo/id - Para excluir um modelo cadastrado
 
-Exemplo: **http://localhost:8080/modelo/5995cf4cc05e6757d98a1f14**
+* **GET** - http://localhost:8080/api/{modelo}/{id} - Lista os valores dos atributos de um modelo específico correspondente ao id cadastrado
+
+Retorno: 
+
+```json
+{
+  "sexo": "Masculino",
+  "nome": "Danilo",
+  "idade": 25,
+  "casado": true,
+  "_id": "2ec18867-f4a5-4c31-9973-ac1087ebb8f4"
+}
+```
+
+---
+* **DELETE** - http://localhost:8080/{modelo}/{id} - Para excluir um modelo cadastrado
 
 Retorno:
 
@@ -132,7 +159,23 @@ Retorno:
       "sexo": "String"
 }
 ```
+
+* **DELETE** - http://localhost:8080/api/{modelo}/{id} - Para excluir os valores dos atributos do modelo criado
+
+Retorno:
+
+```json
+{
+  "sexo": "Masculino",
+  "nome": "Danilo",
+  "idade": 25,
+  "casado": true
+}
+```
+
 ---
+
+
 ### 5 - Cobertura de Testes
 
 Para verificar a cobertura dos testes unitários que foram implementados e executados, basta acessar o a home do projeto após a aplicação ter sido executada conforme **passo 2** e abrir o arquivo **/build/reports/tests/index.html**
